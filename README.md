@@ -34,12 +34,31 @@ E/ Ensure that your jenkins docker container is up and running on local
 - Tips : Use the docker ps.... command
 
 F/ Open your browser and check that your jenkins server is up and running and it's reachable at :
-- http://(your-ip-address):8080 
+- http://(your-ip-address):8080
 
 or
 
 - http://localhost:8080
 
-G/ Once jenkins starts for the first time, it requires an admninistrator password ... Here find a way to retrieve this password inside the conatiner
+G/ Once jenkins starts for the first time, it requires an admninistrator password ... At this stage, find a way to retrieve this password inside the container
 - Tips : Use docker exec -ti.... command to log into the container
+
+## Exercise II
+
+A/ Once connected to jenkins, start installing docker plugin by browsing this url : http://(localhost OR IP-Address):8080/pluginManager/available?filter=Cloud+Providers
+
+Check 'Docker' plugin as shown above and click on 'install without restart' button
+
+B/ Create your first jenkins pipeline job by clicking on "Create a job"
+
+- Enter a jenkins job name : myFirstPipeline
+
+- Select pipeline as option
+
+- Validate by clicking on OK button
+
+
+
+
+
 
