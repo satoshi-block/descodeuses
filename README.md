@@ -53,9 +53,12 @@ B/ Create your first jenkins pipeline job by clicking on "Create a job"
 
 - Enter a jenkins job name : myFirstPipeline
 
-- Select pipeline as option
+- Select 'pipeline'
 
 - Validate by clicking on OK button
+
+C/ In your jenkins job configuration, write the "Hello World" code inside the pipeline script console as follows :
+=> INSERT IMAGE
 
 
 
