@@ -4,21 +4,12 @@
 
 A/ Install docker system on your local machine
 
-B/ Create a directory on your local machine as follows : (FirstName)_(NameOfYourFavoriteFruit)_codeuses
+B/ Create a directory on your local machine as follows : (FirstName)_(LastName)_(NameOfYourFavoriteFruit)_codeuses
 
 C/ Into the folder created above, create a Dockerfile which contains all required instructions to start a jenkins server on your local machine
 - Tips : Your Dockerfile looks like this : 
-```shell
-FROM jenkins/jenkins:lts
 
-# if we want to install via apt
-USER root
-RUN apt-get update && apt-get install -y ruby make
-
-# drop back to the regular jenkins user - good practice
-USER jenkins
-
-```
+![alt](img\dockerfile_script.JPG)
 
 C/ Start building your Dockerfile
 - Tips : Use the docker build.... command
@@ -45,7 +36,14 @@ G/ Once jenkins starts for the first time, it requires an admninistrator passwor
 
 ## Exercise II
 
+A/ Submit the folder containing your dockerfile to Github repository : https://github.com/rovland/descodeuses.git
+- Tips : Use GitHub Desktop application for winidows or directly use git command line such as git clone, git commit -m, git push
+
+## Exercise III
+
 A/ Once connected to jenkins, start installing docker plugin by browsing this url : http://(localhost OR IP-Address):8080/pluginManager/available?filter=Cloud+Providers
+
+![alt](img\docker_plugin.JPG)
 
 Check 'Docker' plugin as shown above and click on 'install without restart' button
 
@@ -57,11 +55,81 @@ B/ Create your first jenkins pipeline job by clicking on "Create a job"
 
 - Validate by clicking on OK button
 
+![alt](img\first_pipeline.JPG)
+
 C/ In your jenkins job configuration, write the "Hello World" code inside the pipeline script console as follows :
-=> INSERT IMAGE
 
+![alt](img\pipeline_script_console.JPG)
 
+Save your configuration by clicking on 'save' button
 
+Start building your project by clicking on "Build Now" button
 
+![alt](img\jenkins_build_now_button.JPG)
 
+Check-out the console output of the job
+
+## Exercice IV
+
+A/ Create a jenkinsfile into the folder created at Exercise I
+
+B/ Start editing the file with your desired editor (Visual Studio Code for example)
+
+C/ write the code below in your jenkinsfile
+
+![alt](img\fix_issue_OnPipeline.JPG)
+
+Submit the jenkinsfile to github repository : https://github.com/rovland/descodeuses.git
+
+D/ Create a new jenkins pipeline job
+
+E/ Within your job configuration, Change the pipeline definition to use a jenkinsfile as follows :
+
+![alt](img\pipeline_script_from_SCM.JPG)
+
+Scroll down at the bottom and change the value of 'Script Path' field in order to locate your jenkinsfile submitted to github repository
+
+![alt](img\ScriptPath_jenkinsfile.JPG)
+
+Save your changes and build the job
+
+F/ Find a way to fix all errors occur by editing your jenkinsfile on local
+- Tips : Using the 'replay' option on a jenkins build job, it's straightforward to quickly test your modifications
+
+![alt](img\replay_option_onJenkinsBuild.JPG)
+
+Submit your modified jenkinsfile to github repository and re-test it on jenkins
+
+## Exercise V
+
+A/ Configure your jenkins server to found the maven M3 tool as follows :
+- Go to : Manage Jenkins → Global Tool Configuration
+
+- Scroll down, search Maven option and click on 'Add Maven' button
+
+![alt](img\add_maven_jenkinsTool.JPG)
+
+- Configure your Maven installation as follows : 
+
+![alt](img\maven_installed_jenkinsTool.JPG)
+
+B/ Create a new jenkinsfile called : jenkinsfile_maven and save it inside the folder created at Exersice I
+
+C/ Write the code below on your jenkinsfile_maven
+
+![alt](img\jenkins_maven_script.JPG)
+
+D/ Submit the code to github repo
+
+E/ Create a new jenkins pipeline job using your jenkins_maven file
+
+F/ Save your changes and build the jenkins job
+
+G/ Some expected errors occur ... Please fix them by editing your jenkinsfile_maven
+
+H/ Submit your modified jenkinsfile_maven to Github repo
+
+I/ Modify your jenkinsfile_maven by adding the code below : 
+
+![alt](img\post_jenkins_maven_script.JPG)
 
