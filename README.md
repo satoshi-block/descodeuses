@@ -1,6 +1,6 @@
-# Exercises for Les Descodeuses
+# Exercices for Les Descodeuses
 
-## Exercise I 
+## Exercice I 
 
 A/ Install docker system on your local machine
 
@@ -19,7 +19,7 @@ D/ Run your jenkins docker container
 
 Caution : take into account that your jenkins is listening on port 8080 inside the container.
 
-Also the port 50000 can be added wihile running your container if you intend to attach a jenkins node agent
+Also the port 50000 can be added while running your container if you intend to attach a jenkins node agent
 
 E/ Ensure that your jenkins docker container is up and running on local
 - Tips : Use the docker ps.... command
@@ -31,13 +31,13 @@ or
 
 - http://localhost:8080
 
-G/ Once jenkins starts for the first time, it requires an admninistrator password ... At this stage, find a way to retrieve this password inside the container
+G/ Once jenkins starts for the first time, it requires an administrator password ... At this stage, find a way to retrieve this password inside the container
 - Tips : Use docker exec -ti.... command to log into the container
 
 ## Exercise II
 
-A/ Submit the folder containing your dockerfile to Github repository : https://github.com/rovland/descodeuses.git
-- Tips : Use GitHub Desktop application for winidows or directly use git command line such as git clone, git commit -m, git push
+A/ Submit the folder containing your dockerfile to GitHub repository : https://github.com/rovland/descodeuses.git
+- Tips : Use GitHub Desktop application for windows or directly use git command line such as git clone, git commit -m, git push
 
 ## Exercise III
 
@@ -69,7 +69,7 @@ Start building your project by clicking on "Build Now" button
 
 Check-out the console output of the job
 
-## Exercice IV
+## Exercise IV
 
 A/ Create a jenkinsfile into the folder created at Exercise I
 
@@ -79,7 +79,7 @@ C/ write the code below in your jenkinsfile
 
 <img src="img/fix_issue_OnPipeline.JPG">
 
-Submit the jenkinsfile to github repository : https://github.com/rovland/descodeuses.git
+Submit the jenkinsfile to GitHub repository : https://github.com/rovland/descodeuses.git
 
 D/ Create a new jenkins pipeline job
 
@@ -87,7 +87,7 @@ E/ Within your job configuration, Change the pipeline definition to use a jenkin
 
 <img src="img/pipeline_script_from_SCM.JPG">
 
-Scroll down at the bottom and change the value of 'Script Path' field in order to locate your jenkinsfile submitted to github repository
+Scroll down at the bottom and change the value of 'Script Path' field in order to locate your jenkinsfile submitted to GitHub repository
 
 <img src="img/ScriptPath_jenkinsfile.JPG">
 
@@ -113,7 +113,7 @@ A/ Configure your jenkins server to found the maven M3 tool as follows :
 
 <img src="img/maven_installed_jenkinsTool.JPG">
 
-B/ Create a new jenkinsfile called : jenkinsfile_maven and save it inside the folder created at Exersice I
+B/ Create a new jenkinsfile called : jenkinsfile_maven and save it inside the folder created at Exercise I
 
 C/ Write the code below on your jenkinsfile_maven
 
@@ -132,4 +132,8 @@ H/ Submit your modified jenkinsfile_maven to Github repo
 I/ Modify your jenkinsfile_maven by adding the code below : 
 
 <img src="img/post_jenkins_maven_script.JPG">
+
+Submit your modified jenkinsfile_maven to GitHub repo
+
+Build the jenkins job accordingly and check each pipeline stages
 
