@@ -1,6 +1,6 @@
-# Exercices for Les Descodeuses
+# Exercises for Les Descodeuses
 
-## Exercice I 
+## Exercise I 
 
 A/ Install docker system on your local machine
 
