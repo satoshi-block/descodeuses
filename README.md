@@ -41,7 +41,7 @@ A/ Install docker system on your local machine
 B/ Clone this repository on local => https://github.com/rovland/descodeuses
 - Tips : For windows you can use Visual Studio Code application or for Linux, use the git clone command
 
-Open the directory 'descodeuses'  and create a new directory as follows : [FirstName]_[LastName]_[NameOfYourFavoriteFruit]_codeuse
+Open the directory 'descodeuses'  and create a new directory as follows : [FirstName]\_[LastName]\_[NameOfYourFavoriteFruit]_codeuse
 
 C/ Into the folder created above, create a Dockerfile which contains all required instructions to start a jenkins server on your local machine
 - Tips : Your Dockerfile looks like this : 
