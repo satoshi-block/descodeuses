@@ -1,4 +1,5 @@
-# Exercises for Les Descodeuses
+# Infrastructure Automation : Continuous Development with Jenkins and Docker
+## Exercises for "les Descodeuses"
 
 ## Exercise I
 
