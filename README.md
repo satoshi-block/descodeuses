@@ -1,10 +1,47 @@
 # Exercises for Les Descodeuses
 
-## Exercise I 
+## Exercise I
+
+A/ Sign-in to your GitHub account... If you don't have a GitHub account, please create it
+- Tips : GitHub website => https://github.com
+
+If you create your GitHub repo for the first time, please do not forget to verify your GitHub email address by looking at your mail messages
+
+B/ Send your GitHub user name to rovland in order to grant you access to collaborate to the following repo => https://github.com/rovland/descodeuses
+
+<img src="img\user_name_github_example.JPG">
+
+C/ Once rovland added you, accept the invitation here : https://github.com/rovland/descodeuses/invitations
+
+<img src="img\invitation_format_onGitHub.JPG">
+
+C/ Reminders
+
+- Ensure that your git setting is correctly configured as follows :
+
+<img src="img\git_config_global.JPG">
+
+- Cloning a GitHub project
+
+<img src="img\git_clone_https.JPG">
+
+- Submit a code to a specific branch
+
+<img src="img\git_push_pull_request.JPG">
+
+Your Pull request (branch name) should appear here => https://github.com/rovland/descodeuses/pulls 
+
+Then find a way to merge it into master branch
+
+## Exercise II 
 
 A/ Install docker system on your local machine
+- Tips : https://docs.docker.com/get-docker
 
-B/ Create a directory on your local machine as follows : (FirstName)_(LastName)_(NameOfYourFavoriteFruit)_codeuses
+B/ Clone this repository on local => https://github.com/rovland/descodeuses
+- Tips : For windows you can use Visual Studio Code application or for Linux, use the git clone command
+
+Open the directory 'descodeuses'  and create a new directory as follows : [FirstName]_[LastName]_[NameOfYourFavoriteFruit]_codeuse
 
 C/ Into the folder created above, create a Dockerfile which contains all required instructions to start a jenkins server on your local machine
 - Tips : Your Dockerfile looks like this : 
@@ -25,7 +62,7 @@ E/ Ensure that your jenkins docker container is up and running on local
 - Tips : Use the docker ps.... command
 
 F/ Open your browser and check that your jenkins server is up and running and it's reachable at :
-- http://(your-ip-address):8080
+- http://[your-ip-address]:8080
 
 or
 
@@ -34,14 +71,14 @@ or
 G/ Once jenkins starts for the first time, it requires an administrator password ... At this stage, find a way to retrieve this password inside the container
 - Tips : Use docker exec -ti.... command to log into the container
 
-## Exercise II
-
-A/ Submit the folder containing your dockerfile to GitHub repository : https://github.com/rovland/descodeuses.git
-- Tips : Use GitHub Desktop application for windows or directly use git command line such as git clone, git commit -m, git push
-
 ## Exercise III
 
-A/ Once connected to jenkins, start installing docker plugin by browsing this url : http://(localhost OR IP-Address):8080/pluginManager/available?filter=Cloud+Providers
+A/ Submit the folder containing your dockerfile to GitHub repository : https://github.com/rovland/descodeuses.git
+- Tips : Use GitHub Desktop application for windows or directly use git command line such as : git add ., git commit -m, git push
+
+## Exercise IV
+
+A/ Once connected to jenkins, start installing docker plugin by browsing this url : http://[localhost OR IP-Address]:8080/pluginManager/available?filter=Cloud+Providers
 
 <img src="img/docker_plugin.JPG">
 
@@ -69,11 +106,11 @@ Start building your project by clicking on "Build Now" button
 
 Check-out the console output of the job
 
-## Exercise IV
+## Exercise V
 
 A/ Create a jenkinsfile into the folder created at Exercise I
 
-B/ Start editing the file with your desired editor (Visual Studio Code for example)
+B/ Start editing the file with your desired editor [Visual Studio Code for example]
 
 C/ write the code below in your jenkinsfile
 
@@ -100,7 +137,7 @@ F/ Find a way to fix all errors occur by editing your jenkinsfile on local
 
 Submit your modified jenkinsfile to github repository and re-test it on jenkins
 
-## Exercise V
+## Exercise VI
 
 A/ Configure your jenkins server to found the maven M3 tool as follows :
 - Go to : Manage Jenkins → Global Tool Configuration
@@ -136,4 +173,3 @@ I/ Modify your jenkinsfile_maven by adding the code below :
 Submit your modified jenkinsfile_maven to GitHub repo
 
 Build the jenkins job accordingly and check each pipeline stages
-
