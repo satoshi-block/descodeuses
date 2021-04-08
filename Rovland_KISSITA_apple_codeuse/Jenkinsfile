@@ -4,9 +4,10 @@ pipeline {
     stages {
         stage('Fix Issue') {
             steps {
-                echo 'Hello Guys. This's my second syntax pipeline to be comfortable with jenkins'
-                echo 'Hello people,
-                This's my second syntax pipeline to be comfortable with jenkins'
+                echo "Hello Guys. This's my second syntax pipeline to be comfortable with jenkins"
+                echo """Hello people,
+                This's my second syntax pipeline to be comfortable with jenkins
+                """
             }
         }
     }
