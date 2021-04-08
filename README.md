@@ -74,7 +74,7 @@ G/ Once jenkins starts for the first time, it requires an administrator password
 
 ## Exercise III
 
-A/ Submit the folder containing your dockerfile to GitHub repository : https://github.com/rovland/descodeuses.git
+A/ Submit the folder containing your dockerfile to a specific branch on GitHub repository : https://github.com/rovland/descodeuses.git
 - Tips : Use GitHub Desktop application for windows or directly use git command line such as : git add ., git commit -m, git push
 
 ## Exercise IV
